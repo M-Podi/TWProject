@@ -1,0 +1,45 @@
+#imagine1{
+    display: block;
+    /* width: 500px;
+    height: 500px; */
+}
+
+#imagine2{
+    /* width: 500px;
+    height: 500px; */
+    display: none;
+}
+
+#imagine3{
+    /* width: 500px;
+    height: 500px; */
+    display: none;
+}
+
+@media (max-width: 601px) {
+    #imagine1{
+        display:none;
+    }
+
+    #imagine2{
+        display:block;
+    }
+
+    #imagine3{
+        display:none;
+    }
+}
+
+@media (max-width: 360px) {
+    #imagine1{
+        display:none;
+    }
+
+    #imagine2{
+        display:none;
+    }
+
+    #imagine3{
+        display:block;
+    }
+}
