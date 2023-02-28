@@ -1,0 +1,75 @@
+﻿GameXplorer 
+
+
+
+
+Acest site de distribuție de jocuri video este o platformă online care oferă utilizatorilor posibilitatea de a achiziționa și descărca jocuri video. Site-ul vă fi accesat prin intermediul unui browser web sau prin intermediul unei aplicații specifice și oferă utilizatorilor o gamă largă de jocuri, de la cele mai recente și populare, până la cele mai vechi și mai puțîn cunoscute. 
+
+
+Pentru a cumpăra un joc, utilizatorii trebuie să-și creeze un cont și să-și introducă informațiile de plată. După ce au achiziționat un joc, utilizatorii îl pot descărca și instala pe propriul lor dispozitiv, precum PC, consolă de jocuri sau dispozitiv mobil. De asemenea, utilizatorii pot folosi contul pentru a lua parte la discuții pe forumurile dedicate jocurilor favorite. 
+
+
+        Lista paginilor: 
+
+
+Welcome – pagina de început care vă conține câteva informații, dar și o scurta lista cu cele mai noi titluri, reclame sau promoții. 
+
+
+Store – magazinul efectiv al site-ului. Vă oferi multiple opțiuni de sortare sau filtrare a jocurilor afișate(în funcție de categorie, data apariției, etc.). 
+
+
+Community – pagina destinata comunicării și împărtășirii de experiențe dintre utilizatori. Un forum ce vă putea cuprinde subiecte pe mai multe teme de discuție. 
+
+
+About us – aceasta pagina vă cuprinde o scurta descriere a site-ului, împreună cu datele de contact. 
+
+
+        Cuvinte cheie pentru site: 
+
+
+Video games, Digital distribution, Gaming ,Downloads, Online store, PC games, Console games, DRM-free, Cloud gaming, Indie games, Multiplayer, Sales, Discounts, Pre-orders, Early access, Gaming community, Reviews, Gaming news, Platform compatibility, Support 
+
+
+        Cuvinte cheie Welcome: 
+
+
+Gaming, Digital distribution, Online marketplace, PC games, Console games, Mobile games, Downloadable content, Indie games, AAA games, Multiplayer, Single-player, Virtual reality, Cloud gaming, DRM-free, Subscription service, Early access, Modding, Gaming community, Ușer reviews, Game recommendations, Sales and discounts, Pre-orders, Game demos, Game streaming, Cross-platform play, Featured games, New releases, Top sellers, Popular genres (e.g. action, adventure, RPG, simulation), System requirements, Payment options, Customer support. 
+
+
+        Cuvinte cheie Store: 
+
+
+Game title, Developer/publisher name, Game description, Game genre, Game features (e.g. single-player, multiplayer, online co-op), Screenshots, Videos, Reviews, Ușer ratings, Metacritic score, System requirements, Platform compatibility, Price, Sales and discounts, Pre-order bonus, Release date, Add to cart/buy now button, Wishlist, Gift options, Related games, DLC (downloadable content), Expansion packs, Season passes, Soundtrack, Game manual, Game mods, Player stats, Achievements, Community forums, Social media sharing. 
+
+
+        Cuvinte cheie Community: 
+
+
+Forums, Discussions, Groups, Clans, Tournaments, Player profiles, Friends list, Private messaging, Public chat rooms, În-game chat, Events, Contests, Ușer-generated content, Modding, Workshop, Guides, Walkthroughs, Tips and tricks, Fan art, Screenshots, Videos, Livestreams, Q&A sessions with developers, Feedback, Suggestions, Bug reports,Technical support, Game updates, Patch notes, Announcements. 
+
+
+        Cuvinte cheie About Us: 
+
+
+Company history, Mission statement, Values, Goals, Founders, Team members, Contact information, Press releases, Awards and recognition, Partnerships, Legal information, Privacy policy, Terms of service, Intellectual property rights, Security measures, Payment processing, Refund policy, Shipping and handling policy, Customer service, Frequently asked questions (FAQs), Careers, Job openings, Benefits and perks, Culture, Diversity and inclusion initiatives, Social responsibility, Sustainability efforts, Community involvement, Corporate giving, Testimonials. 
+
+
+        Lista unor site-uri similare: 
+
+
+Steam: Steam este una dintre cele mai populare platforme de distribuție digitală de jocuri pentru PC-uri, cu o gamă largă de jocuri disponibile, de la cele mai noi titluri până la jocurile mai vechi. Este dezvoltată de Valve Corporation și oferă și alte servicii precum actualizări automate ale jocurilor, multiplayer și comunitate. 
+
+
+Epic Games Store: Epic Games Store este o platformă de distribuție digitală de jocuri pentru PC-uri dezvoltată de Epic Games. Are o gamă largă de jocuri, unele dintre ele exclusive pentru platforma lor, și oferă și gratuit un joc săptămânal. 
+
+
+GOG: GOG (Good Old Games) este o platformă de distribuție digitală de jocuri dezvoltată de CD Projekt RED. Se concentrează în principal pe jocurile mai vechi, cu accent pe retro gaming. Toate jocurile disponibile pe platformă sunt fără DRM. 
+
+
+Origin: Origin este o platformă de distribuție digitală de jocuri pentru PC-uri dezvoltată de Electronic Arts. Are o gamă largă de jocuri, inclusiv cele dezvoltate de EA, cum ar fi seria FIFA sau Battlefield, și oferă și servicii precum multiplayer și streaming de jocuri. 
+
+
+Uplay: Uplay este o platformă de distribuție digitală de jocuri pentru PC-uri dezvoltată de Ubisoft. Este similară cu Origin, dar se concentrează exclusiv pe jocurile dezvoltate de Ubisoft, cum ar fi Assassin's Creed sau Far Cry. Oferă, de asemenea, servicii precum multiplayer și puncte de recompensă. 
+
+
+        În încercarea de a analiza site-urile menționate anterior, am putut observa anumite idei de design care mi s-au părut cel puțin curioase, precum design-ul fragmentat sau meniurile derulante care acoperă prea mult conținut din pagină. Voi încerca să țin cont de aceste detalii în dezvoltarea acestui proiect.
