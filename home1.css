@@ -1,0 +1,497 @@
+:root {
+  --primary: #810000;
+  --secondary: #24124f;
+  --complement1: #EEEBDD;
+  --complement2: #630000;
+
+
+  --menu-height: 50px;
+  --button-width: 128px;
+  --menu-background: var(--primary);
+  --button-border: black;
+  --menu-text-color: rgb(0, 0, 0);
+  --complement4: #810000;
+
+  --light-gray: rgb(176, 176, 176);
+  --dark-gray: rgb(45, 45, 45);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --red: rgb(206, 0, 0);
+  
+  --spacing: 32px;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: var(--menu-background);
+}
+
+html {
+  font-size: large;
+  text-align: justify;
+
+  font-family: 'Rubik', sans-serif;
+
+  transition: .5s font-size;
+}
+
+body {
+  
+  background-color: var(--white);
+  color: var(--black);
+
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  /* width: calc(100vw - 15px); */
+  background-color: var(--menu-background);
+  height: var(--menu-height);
+  position: sticky;
+  top: 0;
+  /* margin-right: calc(-1*var(--spacing));
+  margin-left: calc(-1*var(--spacing)); */
+  z-index: 1;
+}
+
+ul.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+/* permite elementelor sa vina pe un rand sau pe o coloana( se comporta ca un block in cazul de coloana) */
+
+ul.menu li {
+  --border-menu: 2px;
+  width: var(--button-width);
+  height: var(--menu-height);
+  background-color: var(--menu-background);
+  overflow: hidden;
+  text-align: center;
+  /* border: var(--border-menu) solid var(--button-border); */
+  /* float: left; de obicei pentru imagini */
+  /* display: inline-block; sunt vazute ca si caractere mari */
+  box-sizing: border-box;
+  /* pentru a nu se suprapune marginile */
+  list-style-type: none;
+  transition: all 0.5s linear;
+}
+
+ul.menu li a,
+ul.menu li div {
+  display: block;
+  /* width: 100%;
+  height: 100%; */
+  text-decoration: none;
+  color: var(--menu-text-color);
+  line-height: var(--menu-height);
+  /*pentru a alinia textul la mijloc */
+  font-weight: bold;
+}
+
+ul.menu ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  opacity: 0;
+  transition: all 0.5s linear;
+  transform: scale(1, 0);
+  transform-origin: center top;
+}
+
+ul.menu li:nth-child(odd) {
+  background-color: var(--culoare1);
+}
+
+ul.menu li:nth-child(even) {
+  background-color: var(--culoare2);
+}
+
+
+ul.menu li:hover {
+  overflow: visible;
+  background-color: var(--complement2);
+}
+
+ul.menu li:hover ul {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.dropdown:hover{
+
+}
+
+/* .disnone {
+  display: none;
+} */
+
+/* #outer {
+  position: fixed;
+  border: 5px solid var(--complement3);
+  border-radius: 100%;
+  border-top: 0;
+  border-bottom: 0;
+  width: 75px;
+  height: 75px;
+  bottom: 0;
+  right: 0;
+}
+
+#inner {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid rgba(36, 18, 79, 0.7);
+  margin: auto;
+  margin-top: 30%;
+  transition: all 0.3s linear;
+}
+
+#outer:hover #inner {
+  border-bottom: 20px solid var(--complement1);
+  transform: translateY(-10px);
+} */
+
+#menulogo,
+#ch-menu {
+  display: none;
+}
+
+#back-to-top {
+  color: var(--text-black);
+  text-decoration: none;
+}
+
+/* #inner::before {
+  content: attr(data-tooltip);
+  display: none;
+  position: absolute;
+  bottom: -40px;
+  transform: translateX(-45%);
+  border-radius: 3px;
+  background-color: black;
+  color: rgb(0, 0, 0);
+  opacity: 0.7;
+  width: 80px;
+}
+
+#inner:hover::before {
+  display: block;
+} */
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#square {
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  transition: background-color 500ms;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+#scroll-to-top:hover #square {
+  background-color: #555;
+}
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 40px 20px;
+  /* modificam valorile pentru a face marginile mai late si pentru a adauga inaltimea */
+  border-color: transparent transparent #fff transparent;
+  border-radius: 50%;
+  /* setam un radius mai mare pentru a rotunji marginile */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+#scroll-to-top:hover #triangle {
+  border-color: transparent transparent #555 transparent;
+}
+
+.table-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  /* adăugați un scrollbar orizontal pe containerul tabelului */
+}
+
+table {
+  border: 5px inset gray;
+  /* un border inset cu grosime de minim 5px */
+  border-collapse: collapse;
+  /* unificați borderul între celule */
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  /* dimensiunea borderului dintre celule va fi de 1px */
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  /* culoarea fundalului pentru celulele de antet */
+}
+
+tr:hover {
+  transition: outline 0.5s ease-in-out;
+  outline: 5px solid rgba(0, 0, 0, 0.7);
+}
+
+thead th {
+  background-color: #ddd;
+  /* culoarea fundalului pentru celulele de antet */
+}
+
+tbody tr:nth-child(even) td {
+  background-color: #f2f2f2;
+  /* culoarea fundalului pentru celulele pare */
+}
+
+tbody tr:nth-child(odd) td {
+  background-color: #fff;
+  /* culoarea fundalului pentru celulele impare */
+}
+
+/* DE AICI INCEPE VRAJEALA PROASTA */
+/* DE AICI INCEPE VRAJEALA PROASTA */
+/* DE AICI INCEPE VRAJEALA PROASTA */
+/* DE AICI INCEPE VRAJEALA PROASTA */
+/* DE AICI INCEPE VRAJEALA PROASTA */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
+h3 {
+  color: var(--red);
+}
+
+header {
+  background-color: var(--white);
+  color: var(--red);
+  
+  position: relative;
+}
+
+footer {
+  background-color: var(--black);
+  color: var(--light-gray);
+}
+
+footer a:link,
+footer a:visited {
+  color: var(--light-gray);
+}
+
+footer a:hover,
+footer a:active {
+  color: var(--white);
+}
+
+footer iframe {
+  padding: var(--spacing);
+}
+
+
+
+#prezentare {
+  grid-area: prezentare;
+}
+
+#tabel {
+  grid-area: tabel;
+}
+
+#calendar {
+  grid-area: calendar;
+}
+
+#utilizatori {
+  grid-area: utilizatori;
+}
+
+#statistici {
+  grid-area: statistici;
+}
+
+#server {
+  grid-area: server;
+}
+
+#diverse {
+  grid-area: diverse;
+}
+
+
+body {
+}
+
+h1 {
+  font-size: 2.125rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 1.625rem;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+
+main {
+  padding: 0 var(--spacing);
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+      "prezentare  prezentare prezentare prezentare"
+      "tabel       tabel      calendar   calendar"
+      "utilizatori statistici statistici server"
+      "diverse     diverse    diverse    diverse";
+  gap: var(--spacing);
+} 
+
+/* ecrane mici */
+@media screen and (max-width: 767px) {
+  :root {
+      --spacing: 16px;
+      --button-width: 64px;
+  }
+
+  body {
+      font-size: small;
+  }
+
+  main {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "prezentare"
+      "tabel"
+      "calendar"
+      "utilizatori"
+      "statistici"
+      "server"
+      "diverse";
+  }
+}
+
+/* ecrane medii */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  :root {
+      --spacing: 24px;
+      --button-width: 96px;
+  }
+
+  body {
+      font-size: medium;
+  }
+
+  main {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+          "prezentare  prezentare"
+          "tabel       tabel"
+          "calendar    calendar"
+          "utilizatori statistici"
+          "server      server"
+          "diverse     diverse";
+  }
+}
+
+section {
+  border: 1px solid black;
+  border-radius: 8px;
+
+  padding: var(--spacing);
+}
+
+
+
+
+.container-iframe {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.container-iframe iframe {
+  border: 4px solid var(--primary);
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.container-iframe .taburi-iframe {
+  display: flex;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+}
+
+.container-iframe .taburi-iframe a {
+  display: block;
+  border: 4px solid var(--primary);
+  border-top: none;
+
+  background-color: var(--complement1);
+
+  width: var(--button-width);
+  height: 48px;
+  text-align: center;
+  
+  margin: 0 4px;
+  margin-top: -4px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: inset 0 0 4px black;
+
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--primary);
+
+  transition: background .5s, box-shadow .5s;
+}
+
+.container-iframe .taburi-iframe a:hover {
+  background-color: white;
+
+  box-shadow: inset 0 0 1px black;
+}

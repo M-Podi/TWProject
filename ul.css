@@ -1,0 +1,30 @@
+ul.meniu ul{
+    padding-left: 0;
+    list-style-type: none;
+    opacity: 0;
+    transition: opacity 1.2s linear;
+
+     
+    animation-name: animatie_submeniu;
+    animation-duration: 1s;
+    animation-timing-function: linear ;
+    animation-fill-mode:forwards;
+    
+  
+    transform-origin:center top; 
+
+    
+    
+ }
+
+@keyframes animatie_submeniu{
+
+    0%{
+        transform: scaleY(0);
+    }
+
+
+    100%{
+        transform: scaleY(1);
+    }
+}

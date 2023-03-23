@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ul.css" />
+    <title>Dropdown Menu</title>
+    <style>
+        ul.meniu {
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        ul.meniu > li {
+            display: inline-block;
+            position: relative;
+        }
+
+        ul.meniu ul {
+            padding-left: 0;
+            list-style-type: none;
+            opacity: 0;
+            transform: scaleY(0);
+            transform-origin: center top;
+            transition: opacity 1.2s linear, transform 1s linear;
+            display: none; /* Hide the submenu initially */
+        }
+
+        ul.meniu li:hover > ul {
+            display: block; /* Show the submenu when hovering over the parent li */
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    </style>
+</head>
+<body>
+    <ul class="meniu">
+        <li>
+            Menu Item 1
+            <ul>
+                <li>Submenu Item 1</li>
+                <li>Submenu Item 2</li>
+                <li>Submenu Item 3</li>
+            </ul>
+        </li>
+        <li>
+            Menu Item 2
+        </li>
+        <li>
+            Menu Item 3
+        </li>
+    </ul>
+</body>
+</html>
