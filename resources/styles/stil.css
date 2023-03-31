@@ -1,0 +1,113 @@
+/* Linkurile vizitate vor avea o culoare diferită de cea implicită */
+a:visited {
+  color: #8B008B; /* sau altă culoare la alegere */
+}
+
+/* Linkurile externe vor avea un simbol în fața lor */
+a[href^="http"]::before {
+  content: "\2B73";
+  font-size: 1.5em;
+  margin-right: 0.25em;
+}
+
+/* Simbolul va avea o culoare diferită la hover */
+a[href^="http"]:hover::before {
+  color: #FFA500; /* sau altă culoare la alegere */
+}
+
+/* Linkurile din conținut vor avea o pata de culoare la hover */
+main a {
+  
+  transform: translate(-50%, -50%);
+  background-image: radial-gradient(ellipse at center, #e87adb 0%, #c185c1 40%, transparent 80%, transparent 100%);
+  background-size: 0% 100%;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-out;
+  padding: 3px;
+  
+}
+
+
+
+
+
+/* MENIU FOARTE SMECHER SI PEDANT */
+
+
+
+
+
+    /* Stilurile pentru meniu și submeniu */
+    ul, li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-container {
+      position: relative;
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    .menu-toggle:checked ~ .menu {
+      animation: show-menu 0.9s forwards;
+    }
+
+    .menu {
+      display: flex;
+      position: absolute;
+      left: 0;
+      width:100%;
+      background: #eee;
+      padding: 10px;
+      clip-path: circle(0% at 0% 0%);
+      justify-content: space-around;
+      flex-direction:column;
+    }
+
+    .menu li {
+      margin-right: 15px;
+      cursor: pointer;
+    }
+
+    .menu li:hover {
+      background-color: rgb(154, 38, 38);
+    }
+    /* Modificați modul de afișare pentru meniul principal și submeniuri */
+.menu > li {
+  display: block;
+  margin-right: 0;
+}
+
+/* Stilurile pentru submeniu */
+.menu li ul {
+  display: none;
+  position: absolute;
+  background-color: #eee;
+  padding: 10px;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  flex-direction:column;
+}
+
+/* Afișați submeniul atunci când faceți hover pe elementul părinte */
+.menu li:hover ul {
+  display: block;
+}
+
+
+    @keyframes show-menu {
+      0% {
+        clip-path: circle(0% at 0% 0%);
+      }
+      100% {
+        clip-path: circle(200% at 0% 0%);
+      }
+    }
+

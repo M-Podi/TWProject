@@ -1,0 +1,224 @@
+
+<!-- tipul documentului, html,Etapa1, cerinta 1-->
+<!DOCTYPE html>
+<html lang="en"><!-- Etapa1 cerinta 1 -->
+
+<head>
+  <!-- include ../fragmente/head.ejs -->
+  <%- include('../fragmente/head.ejs') %>
+
+  <title>GameXplorer</title>
+</head>
+
+<body>
+  <header>
+    <h1><i class="fa-solid fa-gamepad"></i> GameXplorer</h1>
+    <q>A delayed game is eventually good, but a rushed game is forever bad</q> <i>-Shigeru Miyamoto</i>
+  </header>
+  <%- include('../fragmente/nav.ejs') %>
+  <!-- Task 1/Etapa 6/ Etapa 7 -->
+  <main>
+    <section id="prezentare">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tristique egestas felis et gravida. Praesent
+      rhoncus tellus a pellentesque egestas. Nunc non porta arcu. Duis libero ante, volutpat id volutpat vitae,
+      tincidunt eget lacus. Vestibulum viverra lacus magna, at consequat lorem ultrices ac. Nullam suscipit tortor
+      libero, ac semper velit vehicula a. Duis non tempor odio. Phasellus ac dui laoreet, molestie ex at, tempus ante.
+      Donec faucibus velit posuere, sodales lacus nec, tristique enim.
+    </section>
+    <section id="tabel">
+      <div class="table-container">
+        <table>
+          <caption>Cele mai vândute produse</caption>
+          <thead>
+            <tr>
+              <th scope="col">Produs</th>
+              <th scope="col">Cantitate vândută</th>
+              <th scope="col">Preț/unitate</th>
+              <th scope="col">Total vânzări</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Produs A</th>
+              <td>150</td>
+              <td>10 lei</td>
+              <td>1500 lei</td>
+            </tr>
+            <tr>
+              <th scope="row">Produs B</th>
+              <td colspan="2">Vândut împreună cu Produs A</td>
+              <td>2000 lei</td>
+            </tr>
+            <tr>
+              <th scope="row">Produs C</th>
+              <td>75</td>
+              <td>20 lei</td>
+              <td>1500 lei</td>
+            </tr>
+            <tr>
+              <th scope="row">Produs D</th>
+              <td>100</td>
+              <td>15 lei</td>
+              <td>1500 lei</td>
+            </tr>
+            <tr>
+              <th scope="row">Produs E</th>
+              <td>50</td>
+              <td>30 lei</td>
+              <td>1500 lei</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="3">Total vânzări</th>
+              <td>8000 lei</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+    <section id="calendar">
+      Phasellus quis lectus lacus. Curabitur ornare, orci ac consequat ornare, leo enim tincidunt tellus, luctus mollis
+      ipsum justo non augue. Nulla aliquet tortor rhoncus tortor lobortis feugiat. Nunc efficitur est quam, et
+      condimentum est commodo nec. Donec pretium magna enim, vitae tristique eros mattis quis. Cras in tellus ultrices,
+      placerat libero vel, finibus erat. Vestibulum posuere condimentum nibh, interdum rutrum elit lacinia sed. Nullam
+      at ligula risus. Donec risus nisl, pretium porttitor vulputate vel, feugiat id massa. Phasellus lectus magna,
+      feugiat ac ante id, euismod tempus nulla.
+    </section>
+    <section id="anunturi">
+      Aliquam sapien arcu, tincidunt ac ex at, eleifend fringilla ex. Nulla tristique erat vitae molestie sagittis. Nam
+      quis nunc a nulla pretium elementum ac non tellus. Vestibulum tincidunt lacus arcu. Sed gravida leo a libero
+      lacinia, vitae convallis mauris bibendum. Vivamus blandit augue erat, condimentum volutpat tortor varius ac.
+      Pellentesque ultricies posuere ligula nec sagittis. Vestibulum ac gravida massa, non pharetra mi. Nulla quis velit
+      sodales, pretium lorem et, sagittis lorem. Mauris porttitor dapibus nunc id luctus. Pellentesque mi libero,
+      sollicitudin in elit id, venenatis maximus augue. Vestibulum pharetra ullamcorper ipsum, vel ullamcorper quam
+      lacinia vitae. Praesent vulputate, ante in imperdiet interdum, tellus augue viverra enim, ullamcorper pharetra mi
+      justo sit amet leo.
+    </section>
+    <section id="utilizatori">
+      Donec a sem venenatis, cursus nibh vel, gravida leo. In hac habitasse platea dictumst. Sed ultrices, dolor et
+      interdum lacinia, tellus mauris dignissim magna, eget hendrerit nisl quam egestas dui. Sed vitae sagittis turpis.
+      Pellentesque a mauris massa. In condimentum nibh quis nisi interdum accumsan. Cras eu pulvinar tortor, nec rhoncus
+      massa. Praesent vehicula leo vitae justo aliquam, quis porta neque cursus. Phasellus leo sem, consectetur nec
+      fringilla feugiat, tempus non eros. Nunc non cursus felis. Phasellus mattis blandit commodo. Donec tempor aliquam
+      leo id venenatis. Maecenas ac dui arcu. Etiam tempus mi ac ex varius efficitur. Donec a convallis neque, eget
+      egestas nulla.
+    </section>
+    <section id="statistici">
+      Proin auctor eleifend tellus eu iaculis. Curabitur luctus nulla in lacus fringilla, vel commodo dui luctus.
+      Curabitur aliquam, turpis eu faucibus faucibus, ipsum libero dictum magna, id ullamcorper sem risus consectetur
+      ante. Integer aliquam posuere lacus at convallis. Integer sollicitudin ac lectus elementum laoreet. Vestibulum
+      fringilla metus id velit fringilla, sed accumsan massa suscipit. Vestibulum ullamcorper orci enim, interdum
+      faucibus dolor gravida a. Cras fermentum massa in tellus porta, eu faucibus tortor tristique.
+    </section>
+    <section id="server">
+      Cras eget sapien pretium, vulputate orci non, posuere ex. Donec porttitor dapibus velit, ac efficitur massa
+      sodales at. Vivamus hendrerit dictum sem. Proin et porttitor ante, sed tempus augue. Integer vehicula a sem nec
+      scelerisque. Vestibulum nec eleifend magna. Etiam luctus suscipit mauris quis aliquam. Sed blandit gravida felis,
+      id faucibus ex commodo id. Pellentesque semper erat varius ipsum tempus, non tempus neque vestibulum. Cras auctor
+      sed nulla sit amet gravida. Integer consectetur neque elit, nec sodales nisl malesuada sit amet. Sed gravida massa
+      consequat quam luctus semper. Pellentesque auctor, nulla vel fermentum hendrerit, lectus quam dapibus libero, vel
+      laoreet tortor velit nec mauris. In dignissim metus magna, sed molestie odio semper eu.
+    </section>
+    <section id="diverse">
+      <div class="container-iframe">
+        <iframe src="https://www.youtube.com/embed/dScq4P5gn4A" name="diverse-iframe" height="315"
+          title="Diverse videoclipuri"></iframe>
+        <div class="taburi-iframe">
+          <a href="https://www.youtube.com/embed/dScq4P5gn4A" target="diverse-iframe">Pac-Man</a>
+          <a href="https://www.youtube.com/embed/rLl9XBg7wSs" target="diverse-iframe">Super Mario Bros.</a>
+          <a href="https://www.youtube.com/embed/6UIXVxSsDUk" target="diverse-iframe">Zuma</a>
+        </div>
+      </div>
+
+      <a href="./resources/1478933_693471914020584_457373748_n.jpg" download>Download for a surprise ! <i class="fa-solid fa-face-smile-wink fa-flip"></i></a>
+    </section>
+    <!--<section id="Welcome">
+      <h2>Welcome!</h2>
+      <blockquote></blockquote>
+      <p></p>
+      <section>
+        <h3>Let's see what's new today </h3>
+        <p>There are no new games to display here, but you can Check the list of our most popular games:</p>
+        <ol>
+          <li>
+            <a href="https://github.com/M-Podi/PacMan-ILMF">PacmanILMF</a>
+          </li>
+          <li>
+            <a href="https://github.com/leviaici/pyTicTacToe">pyTicTacToe</a>
+          </li>
+        </ol>
+      </section>
+    </section>
+    <section id="">
+
+    </section>
+    
+    <figure>
+      <img id="imagine1" alt="imagine1" src="./resources/1.png">
+      <img id="imagine2" alt="imagine2" src="./resources/2.png">
+      <img id="imagine3" alt="imagine3" src="./resources/3.png">
+      <figcaption>SuperMario</figcaption>
+    </figure>
+    <a href="https://github.com/madalin1907" target="_blank">Check this out!</a>
+    <iframe src="https://www.youtube.com/embed/dScq4P5gn4A" name="iframe" width="560" height="315"
+      title="Iframe Example"></iframe>
+    <a href="https://www.youtube.com/embed/rLl9XBg7wSs" target="iframe">Check this out!2</a>
+    <a href="https://www.youtube.com/embed/6UIXVxSsDUk" target="iframe">Also check this one!</a>
+    <a href="./resources/1478933_693471914020584_457373748_n.jpg" download>Download for a surprise ! </a>
+    <section id="AboutUs">
+      <h2>About Us</h2>
+      <p>Welcome to <b>GameXplorer</b>, your one-stop-shop for all things gaming! Our website offers a vast
+        library of digital games, available for download on PC and console platforms. From AAA titles to indie
+        gems, we've got everything you need to satisfy your gaming cravings. Our selection is updated regularly,
+        so you can always find the latest and greatest games to play.
+
+        At <b>GameXplorer</b>, we believe in giving our users the freedom to play how they want. That's why we
+        offer DRM-free games, so you can enjoy your purchases without restrictions. We also support cloud
+        gaming, allowing you to stream your favorite games from anywhere, on any device. Whether you're a
+        hardcore gamer or a casual player, we've got you covered.
+
+        In addition to our wide selection of games, we also offer competitive prices and frequent sales and
+        discounts. Plus, you can pre-order upcoming games and gain early access to exclusive content. Our gaming
+        community is also an important part of our website. Connect with other gamers, share your experiences,
+        and discover new games to play.
+
+        Our website is user-friendly and easy to navigate, with detailed game descriptions, screenshots, and
+        reviews to help you make informed purchases. We also offer 24/7 customer support, so you can get help
+        whenever you need it.
+
+        Thank you for choosing <b>GameXplorer</b> as your go-to destination for all your gaming needs. Let's
+        play!</p>
+    </section>
+    <section id="FAQ">
+      <h2>FAQ</h2>
+      <p>What is the purpose of this site?</p>
+      <details>
+        <summary>Answer</summary>
+        For now, this site does nothing useful for society...
+      </details>
+    </section>
+    -->
+  </main>
+  <footer>
+    <a href="#top" id="footer-top">Back to the top</a>
+    <a href="tel:+31628761828">Call center</a>
+    <a href="https://goo.gl/maps/gGSB5827v83cY2Wa8">Address</a>
+    <a href="mailto:c.ionescu-1@student.tudelft.nl">Email for contact</a>
+    <a href="https://wa.me/+31628761828">Whatsapp for contact</a>
+    <p><small>&copy;<time datetime="2023-02-27">27 Februarie 2023</time></small></p>
+    <p class="banner">Acesta este un proiect școlar!</p>
+  </footer>
+  <a href="#top" id="scroll-to-top">
+    <div id="square"></div>
+    <div id="triangle"></div>
+    <span></span>
+  </a>
+  <div class="watermark">
+    Podeanu<br>
+    Matei
+  </div>
+</body>
+
+</html>
+<!-- https://coolors.co/eeebdd-810000-630000-1b1717-302c2c -->

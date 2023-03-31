@@ -1,0 +1,176 @@
+nav {
+  display: flex;
+  /* bold? */
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--menu-background);
+  height: var(--menu-height);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.menu-container{
+  display:none;
+}
+.menu-toggle {
+  display: none;
+}
+ul.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.menu > li {
+  position: relative;
+  margin-right: 20px;
+}
+ul.menu > li a {
+  display: inline-block;
+  padding: 1px 15px;
+  color: var(--menu-text-color);
+  text-decoration: none;
+}
+@media screen and (min-width: 769px) {
+ul.menu > li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--black);
+  opacity: 0;
+  transform: translateY(0);
+  transition: all 0.3s;
+}
+ul.menu > li:hover::after {
+  opacity: 1;
+  transform: translateY(25px);
+}
+.logo {
+  display: none;
+}
+}
+ul.menu ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--menu-background);
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  
+}
+ul.menu li:hover > ul {
+  
+  display: flex;
+  flex-direction: column;
+}
+ul.menu ul li {
+  
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+ul.menu ul li a {
+  
+  display: block;
+  padding: 10px;
+  color: var(--menu-text-color);
+  text-decoration: none;
+}
+ul.menu ul li:hover {
+  background-color: var(--complement2);
+}
+
+/* Hamburger menu styles */
+@media screen and (max-width: 768px) {
+  /* Stilurile pentru meniu și submeniu */
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu-container {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-toggle:checked ~ .menu {
+    animation: show-menu 4s forwards;
+  }
+
+  .menu {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 75%;
+    width:100%;
+    background: #eee;
+    padding: 10px;
+    clip-path: circle(0% at 0% 0%);
+    justify-content: space-around;
+    flex-direction:column;
+  }
+
+  .menu li {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  .menu li:hover {
+    background-color: rgb(154, 38, 38);
+  }
+  /* Modificați modul de afișare pentru meniul principal și submeniuri */
+  .menu li > a, .menu li > div {
+    display: block;
+  }
+
+.menu > li {
+display: block;
+margin-right: 0;
+}
+
+/* Stilurile pentru submeniu */
+.menu li ul {
+display: none;
+position: absolute;
+background-color: #eee;
+padding: 10px;
+left: 0;
+top: 100%;
+width: 100%;
+flex-direction:column;
+z-index: 0;
+}
+
+/* Afișați submeniul atunci când faceți hover pe elementul părinte */
+.menu li:hover ul {
+display: block;
+}
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+  @keyframes show-menu {
+    0% {
+      clip-path: circle(0% at 0% 0%);
+    }
+    100% {
+      clip-path: circle(200% at 0% 0%);
+    }
+  }
+}/*# sourceMappingURL=style.css.map */
+

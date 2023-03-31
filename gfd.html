@@ -1,4 +1,5 @@
-<!-- <!DOCTYPE html>
+<!-- 
+<!DOCTYPE html>
 <html>
   <head>
     <title>Exemplu de utilizare a stilizării pentru linkuri</title>
@@ -23,7 +24,7 @@
       <p>Drepturi de autor &copy; 2023. Toate drepturile rezervate.</p>
     </footer>
   </body>
-</html> -->
+</html>  -->
 <!-- <!DOCTYPE html>
 <html>
   <head>
@@ -83,106 +84,37 @@
     </nav>
     
   </body>
-</html> -->
+</html>-->
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Meniu hamburger</title>
-    <style>
-      /* ascunde caseta de selectare */
-      #hamburger {
-        display: none;
-      }
-
-      /* stilizează butonul de hamburger */
-      .hamburger-btn {
-        font-size: 24px;
-        cursor: pointer;
-        display: inline-block;
-        padding: 10px;
-        color: #000;
-      }
-
-      /* schimbă aspectul butonului de hamburger atunci când caseta de selectare este bifată */
-      #hamburger:checked + .hamburger-btn {
-        background-color: #000;
-        color: #fff;
-      }
-
-      /* ascunde meniul */
-      ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding    : 0;
-  }
-
-  /* stilizează elementele de meniu */
-  ul li {
-    margin: 10px 20px;
-    font-size: 18px;
-    position: relative;
-  }
-
-  /* ascunde meniul subordonat */
-  .sub-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    border-radius: 50%;
-    opacity: 0;
-    transform: scale(0);
-    transform-origin: top left;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-
-  /* afișează meniul subordonat atunci când este selectat */
-  #hamburger:checked ~ ul li:hover .sub-menu {
-    opacity: 1;
-    transform: scale(1);
-    clip-path: circle(0% at top left);
-  }
-
-  /* animație pentru meniul subordonat */
-  .sub-menu {
-    transition: transform 0.3s ease, opacity 0.3s ease, clip-path 0.3s ease;
-  }
-
-  .sub-menu.show {
-    animation: grow-in 0.3s ease forwards;
-  }
-
-  @keyframes grow-in {
-    0% {
-      clip-path: circle(0% at top left);
-      opacity: 1;
-      transform: scale(0);
-    }
-    100% {
-      clip-path: circle(100% at top left);
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-</style>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stil.css">
 </head>
 <body>
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="menu-icon">&#9776;</label>
-
-  <nav class="menu">
-    <ul>
-      <li><a href="#">Acasă</a></li>
-      <li><a href="#">Despre noi</a></li>
-      <li><a href="#">Servicii</a></li>
-      <li><a href="#">Contact</a></li>
+  <div class="menu-container">
+    <label for="menu-toggle">
+      <img src="icon-casuta.png" alt="Icon căsuță" width="24" height="24">
+    </label>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <ul class="menu">
+      <li>Prima Pagină</li>
+      <li>Burger
+        <ul>
+          <li>Submeniu 1</li>
+          <li>Submeniu 2</li>
+          <li>Submeniu 3</li>
+        </ul>
+      </li>
+      <li>Contact</li>
     </ul>
-  </nav>
-
-  </body>
+  </div>
+</body>
 </html>
+
+
 
 
 
